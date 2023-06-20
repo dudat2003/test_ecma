@@ -18,13 +18,10 @@ const SignIn = () => {
             const username = user.username;
             const pass = user.pass;
             const foundUser = users.find((user) => user.username === username && user.pass === pass);
-
             if (foundUser) {
-
               alert("Sign in complete!");
               router.navigate("/products");
             } else {
-
               alert("Username or Password is incorrect!");
             }
           })
